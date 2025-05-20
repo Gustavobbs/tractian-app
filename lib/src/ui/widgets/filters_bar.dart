@@ -49,8 +49,7 @@ class FiltersBar extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: filterEnergy ? Colors.blue : Colors.white,
                     foregroundColor: filterEnergy ? Colors.white : Colors.black,
-                    side: const BorderSide(color: Colors.blue),
-                    elevation: 0,
+                    elevation: 1,
                   ),
                   icon: const Icon(Icons.flash_on),
                   label: const Text('Sensor de Energia'),
