@@ -1,16 +1,18 @@
-# flutter_application_1
+## Vídeo de funcionamento: (O vídeo possui narração 😊)
 
-A new Flutter project.
+[Tractian - Flutter App](https://youtu.be/Vc8upcwvzqc)
 
-## Getting Started
+## Melhorias que estão faltando:
 
-This project is a starting point for a Flutter application.
+- Construção do filtra por Localidade/Asset/Component, do jeito que está filtra apenas Assets/Components.
 
-A few resources to get you started if this is your first Flutter project:
+- Para que o item anterior fique com uma implementação mais performática, seria interessante estudar implementações de árvore que seja ótima para os casos de uso.
+Foi usado uma estrutura genéria de árvore que se encaixa bem com o escopo; tanto em sua montagem como renderização e busca possuem complexidade linear na ordem de O(N),
+más talvez dê para melhorar, dado que na massa de dados mais pesada há um pequeno gargalo na renderização.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Componentização de widgets, principalmente para deixar a tela de busca e exibição de assets mais leve e fácil de compreender, além de tornar os widgets re-utilizáveis.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Separação das regras de negócio das telas, movendo-as para controllers.
+
+- Otimizações de carregamento para bases de dados maiores, estudando e realizando mudanças em parceria com Backend. Para conseguirmos chegar a um faseamento no carregamento dos dados,
+tornando assim a aplicação mais leve em seu start.
